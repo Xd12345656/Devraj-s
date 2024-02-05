@@ -1,21 +1,143 @@
-<htmL>
+<html>
 <head>
-<title>PROFILE WEB PAGE</title>
+<title>Profile_Page</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0px;
+    padding:0px;
+}   
+    body{
+        background-color:rgb(0,0,33);
+        color:white;
+    }
+    nav{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        margin:100px;
+        background-color:rgb(18,18,62);
+        height:90px;
+        margin-top:0px;
+        margin-left:0px;
+    }
+    nav ul{
+        display:flex;
+        justify-content: center;
+    }
+    nav ul li{
+        list-style: none;
+        margin:0 23px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color:white;
+    }
+    nav ul li a:hover{
+        color:lavender;
+        font-size:1.1rem;
+    }
+    .left{
+        font-size: 2rem;
+    }
+    .firstsection{
+        display:flex;
+        justify-content: space-around;
+        margin:80px;
+    }
+    .firstsection > div{
+        width:30%;
+
+    }
+    .leftsection{
+        font-size: 3rem;
+        
+    }
+    .rightsection{
+       
+        margin:23px 0;
+    }
+    .purple
+    {
+        color:blueviolet;
+    }
+    #element
+    {
+        color:blueviolet;
+    }
+    
+</style>
 </head>
 <body>
-<h3 style="color:green;text-align:center;margin-top:20px"><b><i>PERSONAL INFORMATION</i></b></h3>
-<p style="color:white;text-align:center;font-family:courier">NAME:DEVRAJ SINGH<br>DOB:08/06/2006<br>PHONE NUMBER:7599017570<br>
-ADDRESS:<br></p>
-<div style="border:4px solid white">
-<h3 style="color:green;margin-top:20px"><b><i>HOBBIES</b></i></h3>
-<p style="color:white;font-family:courier">FOOTBALL<br>BADMINTON<br>CARDS<br>WATCHING MOVIES<br></p>
+<header>
+<nav>
+<div class="left">Devraj's Webpage</div>
+<div class="right"></div>
+<ul>
+<li><a href="/">HOME</a></li>
+<li><a href="/">ABOUT</a></li>
+<li><a href="/">EDUCATION</a></li>
+<li><a href="/">HOBBIES</a></li>
+<li><a href="/">SKILLS</a></li>
+</ul>
 </div>
-<div style="border:4px solid white">
-<h3 style="color:green;margin-top:20px"><b><i>SKILLS</b></i></h3>
-<p style="color:white;font-family:courier">WEB DEVELOPMENT<br>HTML CSS JAVASCRIPT<br></p>
-<h3 style="color:green;margin-top:20px"><b><i>EDUCATION</i></b></h3>
-<p style="color:white;font-family:courier">Currently Pursuing B-tech From IIITA<br>Completed My Class 12th from Narayan College of Science and Arts</p>
-
 </div>
+</nav>
+</header>
+<main>
+<section class="firstsection">
+<div class="leftsection">Hi,My name is <span class="purple">Devraj</span> 
+    <div>and i am a <span id="element"></span>r</div>
+</div>
+<div class="rightsection"><img src="xd.png.webp" alt=none></div>
+</section>
+<hr>
+</main>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Programmer', 'Web Developer'],
+      typeSpeed: 50,
+    });
+  </script>
+  <div style="margin:200px">
+    <h1 style="color:orange;">Hobbies</h2>
+    <ul style="list-style-type:circle;font-size:24px">
+    <li>Football</li>
+    <li>Web Development</li>
+    <li>Badminton</li>
+    <li>Watching movies</li>
+    </ul>
+    </div>
+    <br><br>
+    <div style="margin:200px">
+    <h1 style="color:orange;">Skills</h2>
+    <ul style="list-style-type:circle;font-size:24px">
+    <li>Web Development</li>
+    <li>Programmming</li>
+    <li>Graphics Designer</li>
+    </ul>
+    </div>
+    <br><br>
+    <div style="margin:200px">
+    <h1 style="color:orange;">Educational Qualifications</h2>
+    <ul style="list-style-type:circle;font-size:24px" >
+    <li>2022--2023_Class 12th-87%</li>
+    <li>2020--2021_Class 10th-86%</li>
+    <li>2023--Present_Btech -IT BI IIIT ALLAHBAD</li>
+    </div>
+    </div>
+    <br><br>
+    <div style="margin:200px">
+        <h1 style="color:orange;">Contact</h2>
+        <ul style="list-style-type:circle;font-size:24px" >
+        <li>Email Address:iib2023041@gmail.com</li>
+        <li>Phone:7599017570</li>
+        </ul>
+        </div>
+        
+    <br><br>
 </body>
 </html>
